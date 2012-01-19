@@ -1,0 +1,1 @@
+Documentation at http://de.contaowiki.org/Shoutbox
