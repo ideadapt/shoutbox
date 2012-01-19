@@ -1,0 +1,126 @@
+#shoutbox_outer {
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+}
+
+#shoutbox_outer.sb_hidden {
+    right: -311px;
+}
+
+#shoutbox_outer.sb_inactive {
+    filter: alpha(opacity = 75) !important;
+    opacity: 0.25 !important;
+}
+
+#shoutbox_outer #inner {
+    position: relative;
+    float: left;
+    background: white;
+    border: 1px solid #CCCCCC;
+    border-right: 0px solid red;
+    border-left: 0px solid red;
+    padding: 6px;
+}
+
+#shoutbox_outer #show_hide_button {
+    position: absolute;
+    left: 0;
+    width: 15px;
+    margin-left: -15px;
+    height: 100%;
+}
+
+#shoutbox_outer #show_hide_button a {
+    display: block;
+    height: 100%;
+    background-color: #8AB858;
+    color: #666666;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    font-family: verdana;
+}
+
+#shoutbox_outer.sb_inactive #show_hide_button a {
+    background-color: #CCCCCC;
+}
+
+
+#shoutbox_outer.sb_hidden #show_hide_button a {
+    background-color: #8AB858;
+}
+
+#shoutbox_outer #show_hide_button a:hover {
+    background-color: #8AB858;
+}
+#shoutbox_outer.sb_hidden #show_hide_button a:hover {
+    background-color: #8AB858;
+}
+
+
+#shoutbox_outer .tl_form {
+    padding: 5px 5px 5px 0;
+    white-space: nowrap;
+}
+
+#shoutbox_outer #msg_history {
+    height: 200px;
+    width: 300px;
+    overflow-y: scroll;
+}
+
+#shoutbox_outer #msg_history .entry {
+    padding: 4px 4px 4px 0;
+}
+
+#shoutbox_outer #msg_history .entry a {
+    color: #feb325;
+}
+
+#shoutbox_outer #msg_history .entry_new {
+    background-color: #c5f198;
+}
+
+#shoutbox_outer #msg_history .entry .user {
+    color: #B3B3B3;
+}
+
+#shoutbox_outer #msg_history .entry .time {
+    color: #B3B3B3;
+}
+
+#shoutbox_outer #msg_history .entry .text {
+    color: inherit;
+}
+
+#shoutbox_outer #notification {
+    padding: 4px 4px 4px 0px;
+}
+
+#shoutbox_outer #notification .status_ok {
+    color: #7ad91c;
+}
+
+#shoutbox_outer #notification .status_error, #shoutbox_outer #notification .status_validation_error {
+    color: #dc8423;
+}
+
+#shoutbox_outer #btn_save {
+    background-color: transparent;
+    background-image: url("img/post.png");
+    background-repeat: no-repeat;
+    border: 0 solid black;
+    height: 28px;
+    margin-left: -4px;
+    width: 33px;
+}
+
+#shoutbox_outer #txt_text {
+    border-color: #CCCCCC;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 0px;
+    padding: 5px;
+    width: 253px;
+}
+
